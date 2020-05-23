@@ -22,6 +22,5 @@ fill_mean = lambda col: col.fillna(col.mean())
 fill_df = drop_sal_df.apply(fill_mean, axis=0)
 
 # Question 2
-rsquared_score = 0.03257139063404435
+rsquared_score = 0.03257139063404413
 length_y_test = 1503
-
