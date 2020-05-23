@@ -21,12 +21,10 @@ all_rm = num_vars.dropna()
 # Question 5
 question5_solution = 'It worked, because Python is magic.'
 # Question 6
-r2_test = 0.019170661803761924
+r2_test = 0.019170661803762479
 # Question 7
 question7_solution = {'The number of reported salaries in the original dataset': 5009,
                        'The number of salaries predicted using our model': 645,
                        'If an individual does not rate stackoverflow, but has a salary': 'We still want to predict their salary',
                        'If an individual does not have a a job satisfaction, but has a salary': 'We still want to predict their salary',
                        'Our model predicts salaries for the two individuals described above.': False}
-
-
