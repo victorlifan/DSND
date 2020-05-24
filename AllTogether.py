@@ -163,13 +163,28 @@ def q4_piat_check(q4_piat):
 
     Prints statement related to the correctness of q4_piat
     '''
-    if q4_piat == s.q4_piat:
+    a = 'we would likely have a better rsquared for the test data.'
+    b = 1000
+    c = 872
+    d = 0.69
+    e = 0.82
+    f = 0.88
+    g = 0.72
+    h = 'we would likely have a better rsquared for the training data.'
+
+    q4_piat_1 = {'The optimal number of features based on the results is': c, 
+                   'The model we should implement in practice has a train rsquared of': e, 
+                   'The model we should implement in practice has a test rsquared of': d,
+                   'If we were to allow the number of features to continue to increase': h
+    }
+
+    if q4_piat == q4_piat_1:
         print("Nice job! That looks right!  We can see that the model we should impement was the 6th model using 1088 features.  It is the model that has the best test rsquared value.")
-    elif q4_piat['The optimal number of features based on the results is'] != s.q4_piat['The optimal number of features based on the results is']:
+    elif q4_piat['The optimal number of features based on the results is'] != q4_piat_1['The optimal number of features based on the results is']:
         print("Oops!  That isn't right for the optimal number of features.  You can get this as the number of columns in either the training or testing datasets.  Note, this is different than the inputs, as they are checking the threshold for the number of missing values in a column, not a threshold for the number of features.")
-    elif q4_piat['The model we should implement in practice has a train rsquared of'] != s.q4_piat['The model we should implement in practice has a train rsquared of'] or q4_piat['The model we should implement in practice has a test rsquared of'] != s.q4_piat['The model we should implement in practice has a test rsquared of']:
+    elif q4_piat['The model we should implement in practice has a train rsquared of'] != q4_piat_1['The model we should implement in practice has a train rsquared of'] or q4_piat['The model we should implement in practice has a test rsquared of'] != s.q4_piat['The model we should implement in practice has a test rsquared of']:
         print("The rsquared values don't look right.  The optimal model should be the model that performed the best on the test data.  The rsquared values should be the rsquared for the training and test sets of data using the same, best model based on the test data.")
-    elif q4_piat['If we were to allow the number of features to continue to increase'] != s.q4_piat['If we were to allow the number of features to continue to increase']:
+    elif q4_piat['If we were to allow the number of features to continue to increase'] != q4_piat_1['If we were to allow the number of features to continue to increase']:
         print("If you were to allow the number of features to increase, you likely would see the same trend you can see in the visual.  That is the test data will continue to provide worse and worse rsquared values, while the training data would go towards 1.")
 
 #Question 5
