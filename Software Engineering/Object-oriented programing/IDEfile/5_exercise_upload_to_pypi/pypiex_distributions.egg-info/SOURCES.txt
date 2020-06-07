@@ -1,0 +1,10 @@
+setup.py
+pypiex_distributions/Binomialdistribution.py
+pypiex_distributions/Gaussiandistribution.py
+pypiex_distributions/Generaldistribution.py
+pypiex_distributions/__init__.py
+pypiex_distributions.egg-info/PKG-INFO
+pypiex_distributions.egg-info/SOURCES.txt
+pypiex_distributions.egg-info/dependency_links.txt
+pypiex_distributions.egg-info/not-zip-safe
+pypiex_distributions.egg-info/top_level.txt
