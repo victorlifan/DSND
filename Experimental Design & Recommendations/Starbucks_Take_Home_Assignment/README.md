@@ -16,12 +16,15 @@ Our promotion strategy will be evaluated on 2 key metrics
 
 ## Findings
 * Purchase rate is obviously higher in promotion group. Number of pepople that don't make a purchase are almost the same regardless of receiving promotions or not. However, for cohort that made purchases, number of people that received promotions is significantly larger than people don't receive pormptions. This indicates promotions have some kind of effect of purchaing behaviors. We need to invesgate p-value of this A/B test to gain further evdience.
-* p-value is extremely small in this case (5.5e-36), which means we have a very strong evdience to reject H0 (pople receive promotions are less likly to make a purchase than people who don't receive promotions).
+* p-value is extremely small in this case (5.5e-36), which means we have a very strong evdience to reject H0 (P_control>=P_test).
 * Although we have statistical significant on the a/b test, but NIR suffers a negative value. This means net profit of treatment group is $2335 less than control group because control group doesn't need to bear 0.15/promotion cost. We do not have a practicial significant on this test.
 * There are only about 1.2% of target data is 1, leaves these data set is very imblanced. This would casue predicting issue on ML algorithms. We need to handle the imbalanced data first.
 > Introduce EasyEnsembleClassifier from imblanced learn library to handle imblanced data
-* Your irr with this strategy is 0.0183.
-Your nir with this strategy is 309.40.
+
+## Result
+* Expected irr : 0.0188 and nir : 189.45
+* My irr with this strategy is 0.0183.(under expected-2.7%)
+My nir with this strategy is 309.40 (over expected 63.3%)
 
 
 ## Software
